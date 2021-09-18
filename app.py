@@ -33,10 +33,9 @@ while True:
     for (x, y, w, h) in pedestrians:
         cv2.rectangle(img, (x, y), (x + w, y + h), (0, 255, 255), 2)
 
-    cv2.imshow('Pragya car detector', frame)
+    cv2.imshow('Pragya car detector', img)
     key = cv2.waitKey(1)
     if key == 27:
         break
 
 cap.release()
-
